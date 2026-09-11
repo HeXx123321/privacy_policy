@@ -1,122 +1,89 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="privacy-policy">
+      <h1>Privacy Policy</h1>
 
-      <div className="ticks"></div>
+      <p>
+        <strong>Applies to:</strong> the Quote App training application, published to Google Play
+        internal testing as part of a Flutter training course.
+      </p>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <p>
+        <strong>Last updated:</strong> 10 September 2026
+      </p>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
-}
+      <hr />
+
+      <h2>The short version</h2>
+      <p>
+        This app does not collect your data. Nothing you type into it leaves your phone.
+      </p>
+
+      <hr />
+
+      <h2>What the app asks for</h2>
+      <p>
+        To produce an illustrative insurance premium, the app asks you to enter:
+      </p>
+      <ul>
+        <li>Vehicle make</li>
+        <li>Vehicle year</li>
+        <li>Driver age</li>
+        <li>Level of cover</li>
+      </ul>
+
+      <h2>What happens to it</h2>
+      <p>
+        That information is used <strong>on your device only</strong>, to calculate an example
+        premium and display it back to you. The calculation runs locally in the app.
+      </p>
+      <p>
+        The app has no server, makes no network requests, and declares no internet
+        permission. There is no account, no login, and no way for us to see anything
+        you enter.
+      </p>
+
+      <h2>What we do not do</h2>
+      <ul>
+        <li>We do not transmit your information anywhere</li>
+        <li>We do not store it on any server</li>
+        <li>We do not share or sell it to anyone</li>
+        <li>We do not use analytics, advertising, tracking or crash-reporting services</li>
+        <li>We do not use third-party SDKs that collect data</li>
+      </ul>
+
+      <h2>Storage on your device</h2>
+      <p>
+        Anything the app remembers between launches is kept in your device's own local
+        app storage. Uninstalling the app removes it. It is never uploaded.
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        This app is not directed at children, and collects no information from anyone.
+      </p>
+
+      <h2>This is a training application</h2>
+      <p>
+        The premium figures this app produces are illustrative only. They are not a
+        quote, not an offer of insurance, and carry no commercial meaning.
+      </p>
+
+      <h2>Changes</h2>
+      <p>
+        If this policy changes, the updated version will be posted at this address with
+        a new &quot;last updated&quot; date.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy: <strong>&lt;CONTACT EMAIL — replace before submitting&gt;</strong>
+      </p>
+    </div>
+  );
+};
 
 export default App
